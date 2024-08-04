@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .heading-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 4px; 
+    }
+    .heading-container h1 {
+      margin-bottom: 0;
+    }
+    .heading-container p {
+      margin-top: 0;
+    }
+    .signup-container {
+      margin-top: 4px; 
+    }
+  </style>
+</head>
+<body>
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Tailblocks</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900">Venue</a>
+        <a class="mr-5 hover:text-gray-900">Vendors</a>
+        <a class="mr-5 hover:text-gray-900">Photos</a>
+        <a class="mr-5 hover:text-gray-900">Testimonials</a>
+      </nav>
+      <a href="home.html">
+        <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">SKIP
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+      </a>
+      
+    </div>
+    <hr>
+  </header>
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-5 mx-auto">
+      <div class="heading-container lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+        <div class="flex-grow sm:pr-14 text-2xl font-medium title-font text-gray-900">
+          <h1>Hassle Free Planning & Booking at Our Guaranteed Best Prices.</h1>
+          <p>10,000+ Events Organized till Date</p>
+          <p>Present in 25+ Cities</p>
+          <p>Over 20,000+ Wedding Venues & Vendors</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+  <section class="text-gray-600 body-font flex-container">
+    <div class="container px-5 py-5 mx-auto flex flex-wrap items-center justify-center signup-container">
+      <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col w-full mt-10 md:mt-0">
+        <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
+        <div class="relative mb-4">
+          <label for="location" class="leading-7 text-sm text-gray-600">Location</label>
+          <select id="location" name="location" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Pune">Pune</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Surat">Surat</option>
+          </select>
+        </div>
+        <div class="relative mb-4">
+          <label for="event-date" class="leading-7 text-sm text-gray-600">Event Date</label>
+          <input type="date" id="event-date" name="event-date" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" min="">
+        </div>
+        <div class="relative mb-4">
+          <label for="guest" class="leading-7 text-sm text-gray-600">Guest</label>
+          <input type="number" id="guest" name="guest" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="budget" class="leading-7 text-sm text-gray-600">Budget</label>
+          <input type="number" id="budget" name="budget" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Search</button>
+        <p class="text-xs text-gray-500 mt-3">Search from over 10000+ Locations</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+   
+    document.getElementById('event-date').min = new Date().toISOString().split('T')[0];
+  </script>
+</body>
+</html>
