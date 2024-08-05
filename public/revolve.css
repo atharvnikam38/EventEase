@@ -1,0 +1,51 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.bg-white {
+  position: relative;
+  overflow: hidden;
+}
+
+.revolving-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: revolve 20s infinite linear;
+}
+
+.revolving-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  animation: fade 20s infinite;
+}
+
+.revolving-background img:nth-child(1) {
+  animation-delay: 0s;
+}
+.revolving-background img:nth-child(2) {
+  animation-delay: 5s;
+}
+.revolving-background img:nth-child(3) {
+  animation-delay: 10s;
+}
+.revolving-background img:nth-child(4) {
+  animation-delay: 15s;
+}
+
+@keyframes revolve {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fade {
+  0%, 100% { opacity: 0; }
+  25%, 75% { opacity: 1; }
+}
